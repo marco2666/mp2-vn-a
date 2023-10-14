@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/order.css">
+     <!-- FABICON -->
+     <link rel="icon" type="image" href="images/icon.png">
+     <!-- GOOGLE FONTS -->
+     
+     <!-- ANIMATION -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <!-- BOOTSTRAP -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- https://as2.ftcdn.net/v2/jpg/04/91/76/99/1000_F_491769978_7XKLPMm9nT9SOVd0sCcSGyMC2wFWrihx.jpg -->
+    
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-xl navbar-dark py-3">
+    <div class="container-fluid">
+        <div class="mx-auto">
+            <a href="index.html">
+            <img src="images/18.png" class="ms-4" style="width: 120px; height: 90px;">
+            <!-- <a class="navbar-brand mx-auto" href="#" style="color: #E4D4B5; font-size: 27px;"><b>Funlasang Pinoy</b></a> -->
+            </a>
+        </div>
+        <div>
+            <button class="navbar-toggler" style="color: #af8430" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown mx-3">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown mx-3">
+                    <a class="nav-link" href="about.html" role="button">
+                    About
+                    </a>
+                    <!-- <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                        <li><a class="dropdown-item" href="#">Food History & Recipes</a></li>
+                    </ul> -->
+                </li>
+                <li class="nav-item dropdown mx-3">
+                    <a class="nav-link" href="menu.html" role="button" >
+                    Our Menu
+                    </a>
+                     <!-- <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Breakfast</a></li>
+                        <li><a class="dropdown-item" href="#">Lunch</a></li>
+                        <li><a class="dropdown-item" href="#">Dinner</a></li>
+                    </ul>  -->
+                </li>
+                <!-- <li class="nav-item dropdown mx-3">
+                    <a class="nav-link" aria-current="page" href="order.html">Order</a>
+                </li> -->
+                <li class="nav-item dropdown mx-3">
+                    <a class="nav-link" href="contact.html" role="button">
+                    Contact
+                    </a>
+                    <!-- <ul class="dropdown-menu" style="background-color:  #022337;">
+                        <li><a class="dropdown-item" href="#">Form</a></li>
+                        <li><a class="dropdown-item" href="#">FAQs</a></li> 
+                    </ul> -->
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="place-order" class="nav-link" href="order.html">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3176/3176397.png" class="mx-2" style="height: 40px; width: 40px;">
+                        <p id="cartlength" class="d-inline-block" style="color:rgba(218, 65, 65, 0.867)"><b></b></p>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="login.html">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4018/4018431.png" class="mx-2" style="height: 40px; width: 40px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav> 
+
+    <!-- HEADER -->
+    <div class="container-fluid text-center p-1">
+        <img src="images/25.gif" class="mx-1" style="height: 190px; width: 190px;">
+        <h3 class="order-title mb-2">Order Summary</h3>
+    </div>
+    <br><br>
+
+    <!-- ORDER -->
+    <div class="order-container container-fluid">
+        <div class="row">
+
+            <div class="col-md-6 ">
+               <!-- <h4> Delivery Information</h4> -->
+               <div class="justify-content-around mb-4">
+                    <div class="col">
+                        <div class="card border-0" style="background-color: rgba(228, 235, 240, 0.967)!important; ">
+                            <form>
+                                <div class="card-header pb-0 p-3" style="background-color: #51a2d4;">
+                                    <h5 class="card-title space ">Delivery</h2>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label for="NAME" class="small text-muted mt-2">Address</label>
+                                            <input type="text" class="form-control form-control-sm mt-2" name="NAME" id="NAME" aria-describedby="helpId" placeholder="Enter your address">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label for="NAME" class="small text-muted mt-2">Apartment, suite, etc.</label>
+                                            <input type="text" class="form-control form-control-sm mt-2" name="NAME" id="NAME" aria-describedby="helpId" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-sm-6 pr-sm-2">
+                                            <div class="form-group">
+                                                <label for="NAME" class="small text-muted mb-1 mt-2">Postal Code</label>
+                                                <input type="number" class="form-control form-control-sm mt-2" name="NUMBER" id="NUMBER" aria-describedby="helpId" placeholder="Enter postal code">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="NAME" class="small text-muted mb-1 mt-2">City</label>
+                                                <!-- Metro Manila-->
+                                                <select id="city" name="city" class="form-select text-muted mt-1" style="font-size: 15px;">
+                                                    <option value="">Select City</option>
+                                                    <option value="Caloocan">Caloocan</option>
+                                                    <option value="Calumpang">Calumpang</option>
+                                                    <option value="Dasmariñas Village">Dasmariñas Village</option>
+                                                    <option value="Ermita">Ermita</option>
+                                                    <option value="Intramuros">Intramuros</option>
+                                                    <option value="Las Piñas">Las Piñas</option>
+                                                    <option value="Makati">Makati</option>
+                                                    <option value="Malabon">Malabon</option>
+                                                    <option value="Malate">Malate</option>
+                                                    <option value="Mandaluyong">Mandaluyong</option>
+                                                    <option value="Manila">Manila</option>
+                                                    <option value="Marikina">Marikina</option>
+                                                    <option value="Muntinlupa">Muntinlupa</option>
+                                                    <option value="National Capital Region">National Capital Region</option>
+                                                    <option value="Navotas">Navotas</option>
+                                                    <option value="Niugan">Niugan</option>
+                                                    <option value="Paco">Paco</option>
+                                                    <option value="Pandacan">Pandacan</option>
+                                                    <option value="Parañaque">Parañaque</option>
+                                                    <option value="Pasay">Pasay</option>
+                                                    <option value="Pasig">Pasig</option>
+                                                    <option value="Pateros">Pateros</option>
+                                                    <option value="Port Area">Port Area</option>
+                                                    <option value="Quezon City">Quezon City</option>
+                                                    <option value="Quiapo">Quiapo</option>
+                                                    <option value="Sambayanihan People's Village">Sambayanihan People's Village</option>
+                                                    <option value="San Juan">San Juan</option>
+                                                    <option value="San Miguel">San Miguel</option>
+                                                    <option value="Santa Ana">Santa Ana</option>
+                                                    <option value="Santa Cruz">Santa Cruz</option>
+                                                    <option value="Singkamas">Singkamas</option>
+                                                    <option value="Taguig">Taguig</option>
+                                                    <option value="Tanza">Tanza</option>
+                                                    <option value="Tanza">Tanza</option>
+                                                    <option value="Tondo">Tondo</option>
+                                                    <option value="Valenzuela">Valenzuela</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label for="NAME" class="small text-muted mt-2">Phone</label>
+                                            <input type="number" class="form-control form-control-sm mt-2" name="NAME" id="NAME" aria-describedby="helpId" placeholder="Enter your phone number">
+                                        </div>
+                                    </div><br>
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      Same shipping address.
+                                    </label><br><br>
+                            </form>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-0 " style="background-color: rgba(228, 235, 240, 0.967)!important;">
+                <form>
+                    <div class="card-header pb-0" style="background-color: #51a2d4;">
+                        <h5 class="card-title space">Payment</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="form-group" style="color: rgb(71, 71, 71)">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                    Credit / Debit Cards and E-Wallets
+                                    </label>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-sm-6 pr-sm-2">
+                                <div class="form-group">
+                                    <label for="NAME" class="small text-muted mb-1 mt-2">First Name</label>
+                                    <input autocomplete="off" type="text" class="form-control form-control-sm mt-2" name="NAME" id="NAME" aria-describedby="helpId" placeholder="Enter first name" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="NAME" class="small text-muted mb-1 mt-2">Last Name</label>
+                                    <input type="text" class="form-control form-control-sm mt-2" name="NAME" id="NAME" aria-describedby="helpId" placeholder="Enter last name">
+                                </div>
+                            </div>
+                        </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="NAME" class="small text-muted mt-2">Card Number</label>
+                                    <input type="number" class="form-control form-control-sm mt-2" name="NAME" id="NAME" aria-describedby="helpId" placeholder="Enter card number" required>
+                                </div>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-sm-6 pr-sm-2">
+                                    <div class="form-group">
+                                        <label for="NAME" class="small text-muted mb-1 mt-2">Expiry Date</label>
+                                        <input type="date" class="form-control form-control-sm mt-2" name="DATE" id="DATE" aria-describedby="helpId" placeholder="" >
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="NAME" class="small text-muted mb-1 mt-2">CVV</label>
+                                        <input type="text" class="form-control form-control-sm mt-2" name="NAME" id="NAME" aria-describedby="helpId" placeholder="CVV">
+                                    </div>
+                                </div>
+                            </div>
+                            </label><br><br>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              GCash / Paypal
+                            </label><br>
+
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Cash on Delivery (COD)
+                            </label><br><br>
+                            <button  type="submit" class="footer-btn rounded-3 border border-0">Proceed to Checkout</button></a></li>
+                          </div>
+                        </div>
+                    </div>
+                </form>   
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <br><br>
+
+    <!-- PROMO CODE -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="banner-code col-md-6 text-center">
+                <h1 class="percent mt-5 pt-3">15% OFF</h1>
+                <button type="submit" class="footer-btn2 rounded-3 border border-0 my-4">Use Now</button></a>
+            </div>
+            
+            <div class="col-md-6 text-center my-5">
+                <h3>Your promo code:</h3>
+                <h2 class="promo-code ">FUNLASANGPINOY2023</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda voluptatum hic quasi doloremque, ex, alias eaque porro id, vitae incidunt atque. Et quasi corporis esse ab perferendis, unde laboriosam? Sequi.</p>
+                
+            </div>
+
+        </div>
+        
+
+
+    </div>
+    
+    <!-- <div class="row mr-0 mx-0 bg-primary ">
+        <div class="col-md-6 ">
+            <div class="col-md-12 gaming-box">
+                cart list
+            </div>
+
+        </div>
+
+        <div class="col-md-6 ">
+            <div class="col-md-12 my-2">
+
+                <div class="container match card rounded-5 p-3">
+                    <h5 class="text-decoration-underline">Delivery</h5>
+                    <div class="row"> 
+                        <div class="col-md-12">
+                       
+                                <select class="custom-select" id="search" onChange="OnSelectedIndexChange()">
+                                    <option class="del-option" value="1">Choose your form of delivery</option>
+                                    <option value="2">Delivery</option>
+                                    <option value="3">Self-Pick</option>
+                                </select>
+
+                                <div class="buttonsDiv"  id="search" onclick="OnSelectedIndexChange()">
+                                    <h4><a href="#2" id="fb1" class="fancyButton"  onclick="OnSelectedIndexChange()"">Button 1</a></h4>
+                                    <h4><a href="#5" id="fb2" class="fancyButton">Button 2</a></h4>
+                                </div>
+
+                                
+                        
+                            
+                        </div>
+                        <div class="col-md-12">
+                            <div id="example">hey</div>
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+
+            </div>
+
+            <div class="col-md-12 bg-success my-2">
+
+                hey
+            </div>
+            
+        </div>
+
+
+
+
+
+
+    </div> -->
+               
+    <!-- FOOTER -->
+    <div id="footer" class="footer container-fluid" style="color: #e4d4b5;">
+        <div class="row p-2">
+            <div class="col-md-4 mt-4">
+                <a href="index.html"><img src="images/18.png" class="mx-auto my-3 d-flex align-items-center" style="width: 220px; height: 170px;"></a> 
+            </div>
+        
+            <div class="col-md-4 mt-3">
+                <ul class="ms-5 ps-5 mx-auto m-3">
+                    <li><a href="index.html"  class="quicklinks text-decoration-none"> Home</a></li>
+                    <br>
+                    <li><a href="about.html" class="quicklinks text-decoration-none"> About</a></li>
+                    <br>
+                    <!-- <li><a href="ourpartners.html" class="quicklinks text-decoration-none"> Food History/Recipes</a></li>
+                    <br> -->
+                    <li><a href="menu.html" class="quicklinks text-decoration-none"> Our Menu</a></li>
+                    <br>
+                    <li><a href="order.html" class="quicklinks text-decoration-none"> Order</a></li>
+                    <br>
+                    <li><a href="contact.html" class="quicklinks text-decoration-none"> Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mt-3">
+                <ul class="ms-2 mt-3">
+                    <li><img class="me-2" style="height: 28px; width: 28px;" src="https://cdn-icons-png.flaticon.com/128/10831/10831906.png">
+                        <a href="#" class="quicklinks text-decoration-none">B12-L34 ABCD Street, Metro Manila </a></li><br>
+                    <li><img class="me-2" style="height: 28px; width: 28px" src="https://cdn-icons-png.flaticon.com/128/10525/10525324.png">
+                      <a href="#" class="quicklinks text-decoration-none">+63 123 456 7890</a></li><br>
+                    <li><img class="me-2" style="height: 28px; width: 28px" src="https://cdn-icons-png.flaticon.com/128/10828/10828619.png">
+                      <a href="#" class="quicklinks text-decoration-none">Email Us</a></li>
+                </ul>
+                <br>
+                <!-- <div class="ms-5 ps-2">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/4406/4406253.png" class="me-2" style="height: 33px; width: 33px;"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/1959/1959255.png" class="mx-2" style="height: 33px; width: 33px;"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2875/2875352.png" class="ms-2" style="height: 33px; width: 33px;"></a>
+                </div> -->
+                <!-- <div class="ms-5 ps-2">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/3771/3771557.png" class="me-2" style="height: 33px; width: 33px;"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/8392/8392180.png" class="mx-2" style="height: 33px; width: 33px;"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2274/2274336.png" class="ms-2" style="height: 33px; width: 33px;"></a>
+                </div> -->
+                <div class="ms-4 ps-2" style="margin-left: 30px!important;">
+                    <a href="#"><img src="images/ig.png" class="me-2" style="height: 33px; width: 33px;"></a>
+                    <a href="#"><img src="images/fb.png" class="mx-2" style="height: 33px; width: 33px;"></a>
+                    <a href="#"><img src="images/utube.png" class="ms-2" style="height: 33px; width: 33px;"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="mt-2" style="color: #f0f0f48d; font-size: 13px;"> © All rights go to their respectful owners. </p> 
+                <!-- <p style="color: #e4d4b58e; font-size: 13px;"><u>Privacy Policy</u> │ <u>Refund Policy</u> │ <u>Shipping Policy</u> │ <u>Terms of Service </u></p> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        function OnSelectedIndexChange()
+            {
+            if (document.getElementById('fb1') = "3"){
+                document.getElementById("example").innerHTML = `<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                            GCash / Paypal
+                                            </label><br>`
+            }
+            if (document.getElementById('search').value == "1"){
+                document.getElementById("example").innerHTML = "1"
+            }
+            if (document.getElementById('search').value == "2"){
+                document.getElementById("example").innerHTML = "2"
+            }
+            if (document.getElementById('search').value == "4"){
+                document.getElementById("example").innerHTML = "4"
+            }
+            if (document.getElementById('search').value == "5"){
+                document.getElementById("example").innerHTML = "hellooo"
+            }
+            }
+    </script> -->
+            
+            
+    <script src="js/order.js"></script>
+
+</body>
+</html>
